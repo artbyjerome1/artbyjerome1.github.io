@@ -642,8 +642,7 @@ section#contact :-ms-input-placeholder {
 }
 
 .footer {
-  font-family: Copperplate; 
-  font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+  p { font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; 
 }
 
 .footer span.copyright {
