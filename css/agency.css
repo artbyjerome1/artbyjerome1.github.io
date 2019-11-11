@@ -642,8 +642,8 @@ section#contact :-ms-input-placeholder {
 }
 
 .footer {
-  padding: 25px 0;
-  text-align: center;
+  font-family: Copperplate; 
+  font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
 }
 
 .footer span.copyright {
