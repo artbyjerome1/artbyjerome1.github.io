@@ -726,3 +726,22 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 /*** end gallery stuff***/
+  
+/*Footer Customizations*/
+footer {
+  text-align: center;
+  color: white;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+/***Ends Footer Work***/
+  
+  
+  
+  
+  
+  
+  
