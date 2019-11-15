@@ -14,22 +14,10 @@
 .inner-width{
    width: 100%;
    max-width: 1200px;
-   margin: auto;
+   margin: 8px;
    padding: 0 20px;
 }
 
-.gallery-section h1{
-  text-alight: left;
-  text-transform: uppercase;
-  color: #333;
-}
-
-.border{
-  width: 100px;
-  height: 4px;
-  background: #333;
-  margin: 60px auto;
-}
 
 .gallery-section .gallery{
   display: flex;
