@@ -40,8 +40,14 @@
     transform: scale(1.4);
 }
 
-@media screen and (max-width: 50%){
+@media screen and (max-width: 768){
     .gallery-section .image{
-        flex: 80%;
+        flex: 33.33%;
+  }
+}
+
+@media screen and (max-width: 480){
+    .gallery-section .image{
+        flex: 33.33%;
   }
 }
