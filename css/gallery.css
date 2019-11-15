@@ -22,7 +22,7 @@
 .gallery-section .gallery{
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: center;  
+  justify-content: left;  
 }
 
 .gallery-section .image{
@@ -32,8 +32,8 @@
 }
 
 .gallery-section .image img{
-   width: 100%;
-   height: 100%;
+   width: 50%;
+   height: 50%;
    transition: 0.1s;
 }
 
