@@ -43,6 +43,6 @@
 
 @media screen{
     .gallery-section .image{
-        flex: 50%;
+        flex: 100%;
   }
 }
