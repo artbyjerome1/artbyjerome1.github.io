@@ -7,7 +7,7 @@
 
 .gallery-section{
     width: 100%;
-    padding: 60px;
+    padding: 80px;
     background:#f1f1f1;
 }
 
@@ -22,12 +22,12 @@
 .gallery-section .gallery{
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: left;  
+  justify-content: center;  
 }
 
 .gallery-section .image{
   flex: 30%;
-  overflow: hidden;
+  overflow: auto;
   cursor: pointer;
 }
 
@@ -38,11 +38,11 @@
 }
 
 .gallery-section .image:hover img{
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 @media screen{
     .gallery-section .image{
-        flex: 100%;
+        flex: 30%;
   }
 }
