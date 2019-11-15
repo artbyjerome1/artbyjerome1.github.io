@@ -41,12 +41,6 @@
     transform: scale(1.4);
 }
 
-@media screen and (max-width: 760px){
-    .gallery-section .image{
-        flex: 50%;   
-  }
-}
-
 @media screen and (max-width: 480px){
     .gallery-section .image{
         flex: 100%;
