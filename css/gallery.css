@@ -21,7 +21,7 @@
 
 .gallery-section .gallery{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
   justify-content: left;  
 }
 
@@ -33,16 +33,15 @@
 
 .gallery-section .image img{
   width: 100%;
-  
-  transition: 0.4s;
+  transition: 1s;
 }
 
 .gallery-section .image:hover img{
     transform: scale(1.4);
 }
 
-@media screen and (max-width: 33%){
+@media screen and (max-width: 33.33%){
     .gallery-section .image{
-        flex: 100%;
+        flex: 80%;
   }
 }
