@@ -6,7 +6,7 @@
 }
 
 .gallery-section{
-    width: 100%;
+    width: 80%;
     padding: 80px 0;
     background:#f1f1f1;
 }
@@ -43,6 +43,6 @@
 
 @media screen{
     .gallery-section .image{
-        flex: 30%;
+        flex: 50%;
   }
 }
