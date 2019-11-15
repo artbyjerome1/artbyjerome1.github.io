@@ -86,7 +86,15 @@ be<!DOCTYPE html>
       
  </div>
 
-
+<script>
+  $(".gallery").magnificPopup({
+      delegate: 'a', 
+      type: 'image',
+      gallery:{
+          enabled: true
+      } 
+  }); 
+</script>
   
   <footer id="contact" class="bg-secondary page-section text-center">
     <p class="text-light">Posted by: Jerome Bell</p>
