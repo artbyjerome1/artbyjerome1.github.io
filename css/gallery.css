@@ -14,15 +14,15 @@
 .inner-width{
    width: 100%;
    max-width: 1200px;
-   margin: 8px;
+   margin: auto;
    padding: 0 20px;
 }
 
 
 .gallery-section .gallery{
   display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;  
+  flex-wrap: nowrap;
+  justify-content: left;  
 }
 
 .gallery-section .image{
