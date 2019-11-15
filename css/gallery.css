@@ -7,7 +7,7 @@
 
 .gallery-section{
     width: 100%;
-    padding: 0 80px;
+    padding: auto;
     background:#f1f1f1;
 }
 
@@ -15,7 +15,7 @@
    width: 100%;
    max-width: 1200px;
    margin: auto;
-   padding: 20px;
+   padding: auto;
 }
 
 
