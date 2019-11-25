@@ -60,11 +60,11 @@
               let n = 3; // n
               let gallery = document.getElementById("sea_gallery");
               for(let i = 1; i <= n ; i++) {
-                    if (i==1||i%3==0){
+                    if (i==1||i%4==0){
                         gallery.innerHTML += '<div>'; 
                     }
                     gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"/>';
-                    if (i%3==0){
+                    if (i%4==0){
                         gallery.innerHTML += '</div>'; 
                     }
                   
