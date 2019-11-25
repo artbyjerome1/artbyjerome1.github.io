@@ -59,16 +59,16 @@
           <script>
               let n = 3; // n
               let gallery = document.getElementById("sea_gallery");
-              for(let i = 1; i <= n ; i++) {
-                    if (i==1||i%4==0){
-                        gallery.innerHTML += '<div>'; 
-                    }
-                    gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"/>';
-                    if (i%4==0){
-                        gallery.innerHTML += '</div>'; 
-                    }
-                  
-               }
+              for (let i = 1; j<=; i++){
+                  gallery.innerHTML += "<div>";
+                  for(let j = 1; j <= 3 ; j++) {
+
+                        gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"/>';
+
+
+                   }
+                  gallery.innerHTML += "</div>";
+              }
 
           </script>
         
