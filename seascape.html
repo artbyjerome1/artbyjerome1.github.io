@@ -21,7 +21,7 @@
   
   <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="js/gallery.js"></script>
+
   <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajaz/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
@@ -53,7 +53,13 @@
   </nav>
   
   <div id="sea_gallery"></div>
-
+  <script>
+      let n = 3; // n
+      let gallery = document.getElementById("sea_gallery");
+      for(let i = 1; i <= n ; i++) {
+          gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"/>';
+       }
+  </script>
   <div class="gallery-section">
       <div class="inner-width">    
         <div>
