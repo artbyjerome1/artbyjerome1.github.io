@@ -52,49 +52,27 @@
     </div>
   </nav>
   
-  <div id="sea_gallery"></div>
-  <script>
-      let n = 3; // n
-      let gallery = document.getElementById("sea_gallery");
-      for(let i = 1; i <= n ; i++) {
-          gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"/>';
-       }
-  </script>
+
   <div class="gallery-section">
       <div class="inner-width">    
-        <div>
-          <a href="img/gallery/seascapes/20191029_153819.jpg">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1" width="33%" >
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2" width="33%" >
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3" width="33%" >
-          </a>
-          <div>
-         <a href="img/gallery/seascapes/20191029_153819.jpg">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1" width="33%">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2" width="33%" >
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3" width="33%" >
-          </a>
-          </div>
-          <div>
-          <a href="img/gallery/seascapes/20191029_153819.jpg">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1" width="33%" >
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2" width="33% >
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3" width="33%" >
-          </a>
-          </div>
-        </div>
+       
+          <div id="sea_gallery"></div>
+          <script>
+              let n = 3; // n
+              let gallery = document.getElementById("sea_gallery");
+              for(let i = 1; i <= n ; i++) {
+                    if (i==1||i%3==0){
+                        gallery.innerHTML += '<div>'; 
+                    }
+                    gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"/>';
+                    if (i%3==0){
+                        gallery.innerHTML += '</div>'; 
+                    }
+                  
+               }
+
+          </script>
+        
       </div>
  </div>
 
