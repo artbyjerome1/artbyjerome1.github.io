@@ -6,7 +6,7 @@
 }
 
 .gallery-section{
-    width: 100%;
+    margin: 10px 50px;
     padding: 60px 0;
     background:#f1f1f1;
 }
@@ -30,12 +30,13 @@
   cursor: pointer;
 }
 
-.gallery-section .image img{
-  height: 100%;
+.gallery-section img{
+  width: 230px;
+  padding 5px;
   transition: 0.4s;
 }
 
-.gallery-section .image:hover img{
+.gallery-section img:hover{
     transform: scale(1.2);
 }
 
