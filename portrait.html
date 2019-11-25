@@ -22,9 +22,18 @@
   <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajaz/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
-  <link href="css/gallery.css" rel="stylesheet">
+  
+  <style type="text/css">
+  <!--
+
+  li{
+    list-style-type:none;
+    margin-right:10px;
+    margin-bottom:10px;
+    float:left;
+  }
+  -->
+</style></head>
 
 </head>
 <body id="seascapes">
@@ -51,40 +60,19 @@
     </div>
   </nav>
   
-
-  <div class="gallery-section">
-      <div class="inner-width">    
-        <div class="gallery">
-          <a href="img/gallery/seascapes/20191029_153819.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2">
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3">
-          </a>
-         <a href="img/gallery/seascapes/20191029_153819.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2">
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153819.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2">
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3">
-          </a>
-        </div>
-      </div>
- </div>
+  <ul>
+    <?php
+        $dirname = "artbyjerome1.github.io/img/gallery/seascapes";
+        $images = scandir($dirname);
+        shuffle($images);
+        $ignore = Array(".", "..");
+        foreach($images as $curimg){
+            if(!in_array($curimg, $ignore)) {
+                echo "<li><a href='".$dirname.$curimg."'><img src='img.php?src=".$dirname.$curimg."&w=300&zc=1' alt='' /></a></li>n ";
+            }
+        }                 
+    ?>
+</ul>
 
 <script>
   $(".gallery").magnificPopup({
@@ -103,4 +91,3 @@
   </footer>
 </body>
 </html>
-
