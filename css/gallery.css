@@ -30,13 +30,13 @@
   cursor: pointer;
 }
 
-.gallery-section img{
+.gallery-section .image img{
   width: 230px;
   padding 5px;
   transition: 0.4s;
 }
 
-.gallery-section img:hover{
+.gallery-section .image:hover img{
     transform: scale(1.2);
 }
 
