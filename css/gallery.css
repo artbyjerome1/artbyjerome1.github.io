@@ -7,7 +7,7 @@
 
 .gallery-section{
     margin: 5px 50px;
-    padding: 30px 0;
+    padding: 60px 0;
     background:#f1f1f1;
 }
 
@@ -15,6 +15,11 @@
    width: 100%;
    margin: auto;
    padding: 0 20px;
+}
+
+.space-around{
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .gallery-section .gallery{
