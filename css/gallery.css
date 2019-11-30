@@ -6,18 +6,16 @@
 }
 
 .gallery-section{
+    margin: 5px 50px;
     padding: 60px 0;
-    background:#f1f1f1;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%
+    background:#FFF;
 }
 
 .inner-width{
-   width: 100%;
-   margin: auto;
-   padding: 0 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .space-around{
