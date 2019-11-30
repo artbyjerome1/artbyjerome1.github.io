@@ -6,9 +6,12 @@
 }
 
 .gallery-section{
-    margin: 5px 50px;
     padding: 60px 0;
     background:#f1f1f1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
 }
 
 .inner-width{
