@@ -377,26 +377,21 @@ header.masthead .intro-text .intro-heading {
   background-color: #212529;
 }
 
-
+footer {
+  text-align: center;
+  color: white;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 
 
 .footer .p3 {
   p { font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; 
 }
 
- footer-bg {
-	 background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,
-	 url('../img/map.jpg');
-	 /*add your desire image src path here.*/
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
-
-
-.site-footer .sidebar-container {
-	background:none !important;
-}
 
 .footer span.copyright {
   font-size: 90%;
