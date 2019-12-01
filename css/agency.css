@@ -645,6 +645,19 @@ section#contact :-ms-input-placeholder {
 .footer .p3 {
   p { font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; 
 }
+  
+.footer-bg {
+	 background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,
+	 url("../img/map-image.png");
+	 /*add your desire image src path here.*/
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.site-footer .sidebar-container {
+	background:none !important;
+}
 
 .footer span.copyright {
   font-size: 90%;
