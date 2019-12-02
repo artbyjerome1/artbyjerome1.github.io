@@ -82,17 +82,17 @@
 
 <div class="gallery-section">
   <div class="inner-width">
-          <div id="sea_gallery"></div>
+          <div id="gallery"></div>
           <script>
               let n = 3; // n
-              let gallery = document.getElementById("sea_gallery");
+              let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
                   gallery.innerHTML += "<div>";
                   for(let j = 1; j <= 3 ; j++) {
-
+                        gallery.innerHTML += '<a class="image" href="img/gallery/seascapes/sea'+ i +'.jpg">';
                         gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%" style="margin:50px;justify-content:center; margin-right:5%;
   margin-left:5%;"/>';
-
+                        gallery.innerHTML += '</a>';
                         i++;
                    }
                   gallery.innerHTML += "</div>";
