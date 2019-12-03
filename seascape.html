@@ -91,7 +91,7 @@
   </style>
 
     <table align="center" id="gallery">
-      <tr colspan="3">Seascapes Take 2</tr>
+      
           <script>
               let n = 6; // number of images
               let gallery = document.getElementById("gallery");
@@ -99,13 +99,13 @@
                   if (i != 1 && i != n){
                         i--; 
                   }
-                  gallery.innerHTML += '<tr>';
+                  gallery.innerHTML += '<tr> <td>test</td>';
                   for(let j = 1; j <= 3 ; j++) {
                         gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg">';
                         gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"></a></td>';
                         i++;
                    }
-                  gallery.innerHTML += '</tr>';
+                  gallery.innerHTML += ' <td>test</td></tr>';
                   
               }
           </script>
