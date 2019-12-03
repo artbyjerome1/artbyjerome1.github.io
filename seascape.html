@@ -27,6 +27,7 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"> </script>
   
   <!-- style for table-->
   <style>
@@ -93,7 +94,16 @@
   </section>
 
   
-
+<script>
+  $(".gallery").magnificPopup({
+      delegate: 'a', 
+      type: 'image',
+      gallery:{
+          enabled: true
+      } 
+  }); 
+</script>
+  
     <table id="gallery" align="center">
       <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
           <script>
@@ -101,7 +111,7 @@
               let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
                   gallery.innerHTML += '<tr>';
-                  gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
+                  gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg" data-lightbox="gallery1" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg" data-lightbox="gallery1" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg" data-lightbox="gallery1" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
                   gallery.innerHTML += '</tr>';
                  
                   i += 2;
