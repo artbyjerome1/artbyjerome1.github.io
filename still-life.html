@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 
-  <title>Seascapes by Jerome</title>
+  <title>Still-Life by Jerome</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,6 +25,9 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js">
+    
    <!-- style for table-->
   <style>
     img{
@@ -95,11 +98,11 @@
     <table id="gallery" align="center">
       <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
           <script>
-              let n = 6; // number of images
+              let n = 100; // number of images
               let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
                   gallery.innerHTML += '<tr>';
-                  gallery.innerHTML += '<td align="center"><a href="img/gallery/still-lifes/still'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/still-lifes/still'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
+                  gallery.innerHTML += '<td align="center"><a href="img/gallery/still-lifes/still' i +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
                   gallery.innerHTML += '</tr>';
                  
                   i += 2;
