@@ -97,16 +97,31 @@
     <table id="gallery" align="center">
       <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
           <script>
-              let n = 6; // number of images
+              let n = 10000; // number of images
               let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
-                  if (i != 1 && i != n){
-                        i--; 
+          
+                  var path_i = new File("img/gallery/seascapes/sea"+ i +".jpg");
+                  var path_i_1 = new File("img/gallery/seascapes/sea"+ (i+1) +".jpg");
+                  var path_i_2  = new File("img/gallery/seascapes/sea"+ (i+2) +".jpg");
+       
+                  if(path_i_2.exists()==true){
+                    gallery.innerHTML += '<tr>';
+                    gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg"></a></td>';
+                    gallery.innerHTML += '</tr>';
+                  }else if(path_i_1.exists()==true){
+                    gallery.innerHTML += '<tr>';
+                    gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg"></a></td><td align="center"></td>';
+                    gallery.innerHTML += '</tr>';
+                  }else{
+                    gallery.innerHTML += '<tr>';
+                    gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td><td align="center"></td><td align="center"></td>';
+                    gallery.innerHTML += '</tr>';
                   }
-                  gallery.innerHTML += '<tr>';
-                  gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg"></a></td>';
-                  gallery.innerHTML += '</tr>';
-                  i += 3;
+                  i += 2;
+                  if(path_i_1.exists()==false){
+                    break; 
+                  }
                   
               }
           </script>
