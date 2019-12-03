@@ -5,7 +5,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+  
+  <link rel='icon' href='img/favicon.ico' type='image/x-icon'/ >
 
   <title>Still-Life by Jerome</title>
 
@@ -21,14 +22,15 @@
   
   <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
   <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajaz/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js">
-    
-   <!-- style for table-->
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"> </script>
+  
+  <!-- style for table-->
   <style>
     img{
           width: 99%; 
@@ -42,7 +44,6 @@
     }
     
   </style>
-</head>
 </head>
 <body id="seascapes">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -85,8 +86,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Still-Life</h2>
-          <h3 class="section-subheading text-muted">“(A) painter can say all he wants to with fruit or flowers or even clouds.” — Édouard Manet</h3>
+          <h2 class="section-heading text-uppercase">Still Life</h2>
+          <h3 class="section-subheading text-muted">"(A) painter can say all he wants to with fruit or flowers or even clouds.” — Édouard Manet</h3>
 
         </div>
       </div>
@@ -94,7 +95,7 @@
   </section>
 
   
-
+  
     <table id="gallery" align="center">
       <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
           <script>
@@ -102,7 +103,7 @@
               let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
                   gallery.innerHTML += '<tr>';
-                  gallery.innerHTML += '<td align="center"><a href="img/gallery/still-lifes/still' i +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
+                  gallery.innerHTML += '<td align="center"><a href="img/gallery/still-lifes/still'+ i +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/still-lifes/still'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
                   gallery.innerHTML += '</tr>';
                  
                   i += 2;
