@@ -82,7 +82,7 @@
   <style>
     table{
       background-color: white;
-      width: 96%;
+      width: 100%;
     }
     td{
       padding:10px;
@@ -96,6 +96,9 @@
               let n = 6; // number of images
               let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
+                  if (i != 1 && i != n){
+                        i--; 
+                  }
                   gallery.innerHTML += '<tr>';
                   for(let j = 1; j <= 3 ; j++) {
                         gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg">';
@@ -103,7 +106,7 @@
                         i++;
                    }
                   gallery.innerHTML += '</tr>';
-                  i--;
+                  
               }
           </script>
     </table>
