@@ -104,11 +104,9 @@
                         i--; 
                   }
                   gallery.innerHTML += '<tr>';
-                  for(let j = 1; j <= 3 ; j++) {
-                        gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td>';
-                        i++;
-                   }
+                  gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td><td><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg"></a></td><td><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg"></a></td>';
                   gallery.innerHTML += '</tr>';
+                  i += 3;
                   
               }
           </script>
