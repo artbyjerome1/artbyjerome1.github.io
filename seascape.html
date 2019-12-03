@@ -78,25 +78,35 @@
     </div>
   </section>
 
-<div class="gallery-section">
-  <div class="inner-width">
-    <div id="gallery"> </div>
+  
+  <style>
+    table{
+      background-color: white;
+      width: 96%;
+    }
+    td{
+      padding:1%;
+    }
+    
+  <\style>
+
+    <table align="center" id="gallery">
+          
           <script>
               let n = 3; // n
               let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
-                  gallery.innerHTML += "<div>";
+                  gallery.innerHTML += "<tr>";
                   for(let j = 1; j <= 3 ; j++) {
-                        gallery.innerHTML += '<a href="img/gallery/seascapes/sea'+ i +'.jpg">';
+                        gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg">';
                         gallery.innerHTML += '<img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"/>';
-                        gallery.innerHTML += '</a>';
+                        gallery.innerHTML += '</a><\td>';
                         i++;
                    }
-                  gallery.innerHTML += "</div>";
+                  gallery.innerHTML += "</tr>";
               }
-            
-            </div>
-             </div>
+          <\script>
+    <\table>
 
         
 
