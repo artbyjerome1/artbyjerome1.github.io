@@ -27,7 +27,21 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
-
+  
+  <!-- style for table-->
+  <style>
+    img{
+          width: 30%; 
+    }
+    table{
+          background-color: white;
+          width: 100%;
+    }
+    td{
+          padding:2px;
+    }
+    
+  </style>
 </head>
 <body id="seascapes">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -79,18 +93,8 @@
   </section>
 
   
-  <style>
-    table{
-      background-color: white;
-      width: 100%;
-    }
-    td{
-      padding:2px;
-    }
-    
-  </style>
 
-    <table align="center" id="gallery">
+    <table id="gallery" align="center">
       
           <script>
               let n = 6; // number of images
@@ -101,7 +105,7 @@
                   }
                   gallery.innerHTML += '<tr> <td>test</td>';
                   for(let j = 1; j <= 3 ; j++) {
-                        gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%"></a></td>';
+                        gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td>';
                         i++;
                    }
                   gallery.innerHTML += ' <td>test</td></tr>';
@@ -109,6 +113,7 @@
               }
           </script>
     </table>
+
 
         
 
