@@ -95,7 +95,7 @@
   
 
     <table id="gallery" align="center">
-      
+      <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
           <script>
               let n = 6; // number of images
               let gallery = document.getElementById("gallery");
@@ -103,12 +103,12 @@
                   if (i != 1 && i != n){
                         i--; 
                   }
-                  gallery.innerHTML += '<tr> <td>test</td><td>test2</td><td>test3</td>';
+                  gallery.innerHTML += '<tr>';
                   for(let j = 1; j <= 3 ; j++) {
                         gallery.innerHTML += '<td><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td>';
                         i++;
                    }
-                  gallery.innerHTML += ' <td>test</td></tr>';
+                  gallery.innerHTML += '</tr>';
                   
               }
           </script>
