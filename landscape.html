@@ -22,11 +22,26 @@
   
   <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
   <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajaz/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
-
+  
+  <!-- style for table-->
+  <style>
+    img{
+          width: 99%; 
+    }
+    table{
+          background-color: white;
+          width: 99%;
+    }
+    td{
+          padding:5px;
+    }
+    
+  </style>
 </head>
 <body id="seascapes">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -69,63 +84,40 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Landscapes</h2>
-          <h3 class="section-subheading text-muted">"By discovering nature, you discover yourself.” — Maxime Lagacé</h3>
+          <h2 class="section-heading text-uppercase">Seascapes</h2>
+          <h3 class="section-subheading text-muted">"Water is the driving force of all nature.” — Leonardo da Vinci</h3>
 
         </div>
       </div>
     </div>
   </section>
+
   
 
-  <div class="gallery-section">
-      <div class="inner-width">    
-        <div class="gallery">
-          <a href="img/gallery/seascapes/20191029_153819.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2">
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3">
-          </a>
-         <a href="img/gallery/seascapes/20191029_153819.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2">
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153819.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153819.jpg" alt="sea1">
-          </a>
-          <a href="img/gallery/seascapes/20191029_153801.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_153801.jpg" alt="sea2">
-          </a>
-          <a href="img/gallery/seascapes/20191029_154105.jpg" class="image">
-           <img src="img/gallery/seascapes/20191029_154105.jpg" alt="sea3">
-          </a>
-        </div>
-      </div>
- </div>
+    <table id="gallery" align="center">
+      <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
+          <script>
+              let n = 6; // number of images
+              let gallery = document.getElementById("gallery");
+              for (let i = 1; i<=n; i++){
+                  gallery.innerHTML += '<tr>';
+                  gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
+                  gallery.innerHTML += '</tr>';
+                 
+                  i += 2;
+                   
+              }
+          </script>
+    </table>
 
-<script>
-  $(".gallery").magnificPopup({
-      delegate: 'a', 
-      type: 'image',
-      gallery:{
-          enabled: true
-      } 
-  }); 
-</script>
+
+        
+
   
   <footer class="footer bg-secondary" id="contact">
     <p class="text-light">Posted by: Jerome Bell</p>
     <p class="text-light">Contact information: <a href="mailto:artbyjerome2@gmail.com">
-    artbyjerome@gmail.com</a>.</p>
+    artbyjerome@gmail.com</a></p>
     <p style="font-family: Copperplate, "Copperplate Gothic Light";">
       Art By Jerome
     </p>
@@ -143,5 +135,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+  
 </body>
 </html>
