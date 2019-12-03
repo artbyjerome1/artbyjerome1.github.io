@@ -8,7 +8,7 @@
   
   <link rel='icon' href='img/favicon.ico' type='image/x-icon'/ >
 
-  <title>Seascapes by Jerome</title>
+  <title>Portraits by Jerome</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +30,21 @@
   <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
   <script type="text/javascript" src="js/lightbox-plus-jquery.min.js">
   </script>
+  
+  <!-- style for table-->
+  <style>
+    img{
+          width: 99%; 
+    }
+    table{
+          background-color: white;
+          width: 99%;
+    }
+    td{
+          padding:5px;
+    }
+    
+  </style>
 
 </head>
 <body id="seascapes">
@@ -84,35 +99,24 @@
   
 
 
-<div class="gallery-section">
-  <div class="inner-width">
-          <div id="sea_gallery"></div>
+<table id="gallery" align="center">
+      <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
           <script>
-              let n = 3; // n
-              let gallery = document.getElementById("sea_gallery");
+              let n = 100; // number of images
+              let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
-                  gallery.innerHTML += "<div>";
-                  for(let j = 1; j <= 3 ; j++) {
-                        gallery.innerHTML += '<a href="img/gallery/seascapes/sea'+ i +'.jpg" data-lightbox="gallery1"><img src="img/gallery/seascapes/sea'+ i +'.jpg" width="30%" style="margin:"50px"/></a>';
-                        i++;
-                   }
-                  gallery.innerHTML += "</div>";
+                  gallery.innerHTML += '<tr>';
+                  gallery.innerHTML += '<td align="center"><a href="img/gallery/portraits/portrait'+ i +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/portraits/portrait'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/portraits/portrait'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/portraits/portrait'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/portraits/portrait'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/portraits/portrait'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
+                  gallery.innerHTML += '</tr>';
+                 
+                  i += 2;
+                   
               }
           </script>
-    </div>
-  </div>
+    </table>
         
 
 
-<script>
-  $(".gallery").magnificPopup({
-      delegate: 'a', 
-      type: 'image',
-      gallery:{
-          enabled: true
-      } 
-  }); 
-</script>
   
   <footer class="footer bg-secondary" id="contact">
     <p class="text-light">Posted by: Jerome Bell</p>
