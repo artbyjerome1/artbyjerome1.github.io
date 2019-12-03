@@ -101,11 +101,11 @@
               let gallery = document.getElementById("gallery");
               for (let i = 1; i<=n; i++){
          
-                  if(i+2 <= n){
+                  if((i+2) <= n){
                     gallery.innerHTML += '<tr>';
                     gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg"></a></td>';
                     gallery.innerHTML += '</tr>';
-                  }else if(i+1) <= n){
+                  }else if((i+1) <= n){
                     gallery.innerHTML += '<tr>';
                     gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg"><img src="img/gallery/seascapes/sea'+ i +'.jpg"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg"></a></td><td align="center"></td>';
                     gallery.innerHTML += '</tr>';
