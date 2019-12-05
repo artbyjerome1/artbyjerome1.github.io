@@ -5,8 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel='icon' href='img/favicon.ico' type='image/x-icon'/ >
+ 
 
   <title>Seascapes by Jerome</title>
 
@@ -22,28 +21,15 @@
   
   <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
+  <script href="js/gallery.js"></script>
   <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajaz/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"> </script>
-  
-  <!-- style for table-->
-  <style>
-    img{
-          width: 99%; 
-    }
-    table{
-          background-color: white;
-          width: 99%;
-    }
-    td{
-          padding:5px;
-    }
-    
-  </style>
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js">
+  </script>
+
 </head>
 <body id="seascapes">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -56,88 +42,60 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-warning" href="https://artbyjerome1.github.io/index.html#portfolio">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="https://artbyjerome1.github.io/index.html#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-warning" href="aboutartist.html">About Artist</a>
+            <a class="nav-link js-scroll-trigger" href="aboutartist.html">About Artist</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-warning" href="https://www.redbubble.com/people/ArtbyJerome">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-warning" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
-  <section class="bg-light page-section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        
+  <div id="sea_gallery"></div>
 
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="bg-light page-section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Seascapes</h2>
-          <h3 class="section-subheading text-muted">"Water is the driving force of all nature.” — Leonardo da Vinci</h3>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  
-    <table id="gallery" align="center">
-      <tr><td colspan="3" align="center">Click on an image to see a larger view.</td></tr>
-          <script>
-              let n = 100; // number of images
-              let gallery = document.getElementById("gallery");
-              for (let i = 1; i<=n; i++){
-                  gallery.innerHTML += '<tr>';
-                  gallery.innerHTML += '<td align="center"><a href="img/gallery/seascapes/sea'+ i +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/seascapes/sea'+ i +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/seascapes/sea'+ (i+1) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td><td align="center"><a href="img/gallery/seascapes/sea'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)" data-lightbox="gallery1"><img src="img/gallery/seascapes/sea'+ (i+2) +'.jpg" onerror="this.parentNode.removeChild(this)"></a></td>';
-                  gallery.innerHTML += '</tr>';
-                 
-                  i += 2;
-
-                   
-              }
-          </script>
-    </table>
-
-
-        
+  <div class="gallery-section">
+          <a href="img/gallery/seascapes/20191029_153819.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_153819.jpg">
+          </a>
+          <a href="img/gallery/seascapes/20191029_153801.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_153801.jpg">
+          </a>
+          <a href="img/gallery/seascapes/20191029_154105.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_154105.jpg">
+          </a>
+          <div>
+         <a href="img/gallery/seascapes/20191029_153819.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_153819.jpg">
+          </a>
+          <a href="img/gallery/seascapes/20191029_153801.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_153801.jpg">
+          </a>
+          <a href="img/gallery/seascapes/20191029_154105.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_154105.jpg">
+          </a>
+          </div>
+          <div>
+          <a href="img/gallery/seascapes/20191029_153819.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_153819.jpg">
+          </a>
+          <a href="img/gallery/seascapes/20191029_153801.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_153801.jpg">
+          </a>
+          <a href="img/gallery/seascapes/20191029_154105.jpg" data-lightbox="gallery1" style="max-width: 500px">
+           <img src="img/gallery/seascapes/20191029_154105.jpg">
+          </a>
+ </div>
+ </div>
 
   
-  <footer class="footer bg-secondary" id="contact">
+  <footer id="contact" class="bg-secondary page-section text-center">
     <p class="text-light">Posted by: Jerome Bell</p>
     <p class="text-light">Contact information: <a href="mailto:artbyjerome2@gmail.com">
-    artbyjerome@gmail.com</a></p>
-    <p style="font-family: Copperplate, "Copperplate Gothic Light";">
-      Art By Jerome
-    </p>
+    artbyjerome@gmail.com</a>.</p>
   </footer>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
-  
 </body>
 </html>
